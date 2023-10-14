@@ -35,7 +35,7 @@ header{
 .mix-title > a:hover {
     text-decoration: underline;
 }
-/* ----------------------------------------------------------------------------------- */
+
 .mix-item{
     background-color: rgb(231, 231, 231);
     border-radius: 15px;
@@ -45,6 +45,15 @@ header{
     width: 100%;
     margin: 15px 0;
     border-radius: 10px;
+}
+.play-button {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    display: none;
+}
+.play-button:hover {
+    display: block;
 }
 .mix-artist > img {
     border-radius: 50%;
@@ -118,6 +127,6 @@ header{
 
 @media (max-width: 768px) {
     .right-body{
-        visibility: hidden;
+        display: none;
     }
 }
