@@ -9,7 +9,7 @@ header{
     background-color: #333333;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 .main{
@@ -75,19 +75,9 @@ header{
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-/* -------------------------------------------------------------------------------- */
-
-
-
-
-
-/* -------------------------------------------------------------------------------- */
 
 .right-body {
     padding: 0 20px;
-    position: sticky;
-    bottom: 0;
-    z-index: 1;
 }
 .like-header, .history-header {
     display: flex;
@@ -111,7 +101,7 @@ header{
 .list-like > ul, .list-history > ul{
     padding: 0;
 }
-.list-item > a > img{
+.like-img, .history-img{
     width: 60px;
     height: 60px;
     margin-right: 10px;
@@ -135,6 +125,65 @@ header{
     padding-right: 15px;
 }
 
+
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    height: 100%;
+    background-color: #333333;
+}
+.playbar{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto 10px;
+}
+#prev, #play, #next {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #333333;
+    color: white;
+}
+#prev:hover, #play:hover, #next:hover {
+    background: #525252;
+}
+#prev > i, #play > i, #next > i {
+    font-size: 24px;
+    padding: 10px;
+}
+
+
+
+
+
+footer{
+    background-color:#333333 ;
+}
+.footer{
+    padding-top: 50px;
+}
+.social-icons{
+    list-style-type: none;
+    display: flex;
+}
+.social-icons > li {
+    margin-right: 20px;
+}
+.footer-title{
+    color:#bbbbbb;
+    padding: 0 32px 0;
+}
+.footer-list{
+    list-style-type: none;
+}
+.footer-item{
+    color: white;
+    text-decoration: none;
+}
 @media (max-width: 768px) {
     .right-body{
         display: none;
